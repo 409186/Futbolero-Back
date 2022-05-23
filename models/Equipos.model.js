@@ -10,7 +10,8 @@ const equipoSchema = new Schema(
         jugadores: [{ type: Schema.Types.ObjectId, ref: 'Jugador' }],
         imagenLogo: {
             type: String,
-            required: true
+            required: true,
+            default: "http://assets.stickpng.com/images/585e4beacb11b227491c3399.png"
         }
     },
     {

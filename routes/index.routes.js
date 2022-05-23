@@ -1,11 +1,13 @@
 const router = require("express").Router();
 const authRoutes = require("./auth.routes");
+const equiposRoutes = require("./equipos.routes");
 
 /* GET home page */
 router.get("/", (req, res, next) => {
-  res.json("All good in here");
+  res.json({equipos: "Cruz Azul"});
 });
 
 router.use("/auth", authRoutes);
+router.use("/", equiposRoutes)
 
 module.exports = router;
