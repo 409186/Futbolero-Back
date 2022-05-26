@@ -16,6 +16,4 @@ const jugadoresSchema = new Schema(
     }
 )
 
-const Jugador = model("Jugador", jugadoresSchema)
-
-module.export = Jugador
+module.exports = model("Jugador", jugadoresSchema)

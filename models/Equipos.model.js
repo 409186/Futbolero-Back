@@ -7,10 +7,12 @@ const equipoSchema = new Schema(
             required: true,
             unique: true
         },
-        jugadores: [{ type: Schema.Types.ObjectId, ref: 'Jugador' }],
+        jugadores: [{ 
+            type: Schema.Types.ObjectId,
+            ref: 'Jugador'
+        }],
         imagenLogo: {
             type: String,
-            required: true,
             default: "http://assets.stickpng.com/images/585e4beacb11b227491c3399.png"
         }
     },

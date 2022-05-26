@@ -8,6 +8,6 @@ router.get("/", (req, res, next) => {
 });
 
 router.use("/auth", authRoutes);
-router.use("/", equiposRoutes)
+router.use("/perfil", equiposRoutes)
 
 module.exports = router;
